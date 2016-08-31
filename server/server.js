@@ -42,13 +42,8 @@ app.use(function(req, res, next) {
 
 // Define to JSON type
  var jsonContent,userDetails;
-// Get Value from JSON
-// console.log("q1:", jsonContent.q1);
-// console.log("q2:", jsonContent.q2);
-// console.log("q3:", jsonContent.q3);
 
 function getParameterByName(name, req_url) {
-    //if (!req_url) req_url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
     var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
         results = regex.exec(req_url);
@@ -77,13 +72,9 @@ function getScenario(req, res) {
     var example = fs.readFileSync("../data/certs/"+req.params.cert_id+"/"+req.params.scid+"/"+req.params.tid+".json");
     // Define to JSON type
     jsonContent = JSON.parse(example);
-    /*if(jsonContent){
-        res.json(jsonContent);
-    }*/
 
     var obj = zorkData(req);
     res.json(obj);
-
 }
 
 
@@ -178,26 +169,11 @@ function zork(data,req){
     
     var wn = wordNet(null, false);
 
-    /*var data = {"keywords":['open','box'],            //
-                  "syn_set": [202145103,201487784] // this will be the synset id's for the for the synonyms  
-                }*/
-
     var req_url = req.url.toString();
     var in1 = getParameterByName('ans', req_url);
-    //var in1 = "bye"
-    // var stdin = process.openStdin();
-    //stdin.setEncoding('ascii');
-    //readline()
-    /*var in1;    
-    stdin.on('data',function(input){
-        this.in1 = input
-    })*/
-    //console.log(in1)
-    //console.log(data.key_words)
     tokenizer = new natural.WordTokenizer();
     token_list = tokenizer.tokenize(in1);
 
-    //console.log(data.keywords[1])
     ////////////////////perform the lookalike//////////////////////////////////////
     // here we have 2 options one Levenshtein distance and  Jaro–Winkler string '
     //distance here i am using  Jaro–Winkler with strict checking(0.9) if we get the match greater than 09 we will replace the word with the token list
@@ -206,7 +182,7 @@ function zork(data,req){
 
         for(var j = 0;j < token_list.length;j++){
 
-            if(natural.JaroWinklerDistance(data.key_words[i],token_list[j]) > 0.9){
+            if(natural.JaroWinklerDistance(data.key_words[i],token_list[j]) > 0.85){
                
                token_list[j] = data.key_words[i]
                    
