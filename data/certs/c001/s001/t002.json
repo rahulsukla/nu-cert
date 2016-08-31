@@ -1,0 +1,66 @@
+[
+  {
+    "node_num": 1,
+    "question": "You are now in a Datacenter which has empty rack, flat switch, a laptop with Foundation VM running on it. You see a big box from Nutanix at the corner of the room",
+    "transitions": [
+      {
+        "key_words": ["open","box"],
+        "target_node_num": 2 
+      }
+    ]
+  },
+  {
+    "node_num": 2,
+    "question": "The box contains NX-3450 nodes with chassis in the box with required cables",
+    "transitions": [
+      {
+        "key_words": ["rack","servers"],
+        "target_node_num": 3
+      },
+      {
+        "key_words": ["mount","servers"],
+        "target_node_num": 3
+      },
+      {
+        "key_words": ["rack","hardware"],
+        "target_node_num": 3
+      },
+      {
+        "key_words": ["connect","hardware"],
+        "target_node_num": 3
+      }
+    ]
+  },
+  {
+    "node_num": 3,
+    "question": "The nodes are now racked.",
+    "transitions": [
+      {
+        "key_words": ["foundation"],
+        "target_node_num": 4
+      },
+      {
+        "key_words": ["image"],
+        "target_node_num": 4
+      }
+    ]
+  },
+  {
+    "node_num": 4,
+    "question": "The nodes are not showing up in the Block & Node Config page of Foundation",
+    "transitions": [
+      {
+        "key_words": ["discover"],
+        "target_node_num": 5
+      }
+    ]
+  },
+  {
+    "node_num": 5,
+    "question": "We will get back soon",
+    "transitions": []
+  }
+]
+    
+
+
