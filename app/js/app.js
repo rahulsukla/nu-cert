@@ -74,9 +74,8 @@ angular.module('App', [
                   controller: 'ScenarioController'
                 }
             }
-        })
-        
-.state('app.selectmodule', {
+        })        
+        .state('app.selectmodule', {
            url: "/selectmodule",
            cache: false,
            views: {
@@ -85,7 +84,7 @@ angular.module('App', [
                  controller: 'SelectModuleController'
                }
            }
-       })
+        })
         .state('app.certifications', {
             url: "/certifications",
             cache: false,
