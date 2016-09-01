@@ -62,7 +62,6 @@ angular.module('App', [
                   templateUrl: "templates/certificate.html",
                   controller: 'CertificateController'
                 }
-
             }
         })
 
@@ -75,16 +74,6 @@ angular.module('App', [
                   controller: 'ScenarioController'
                 }
             }
-        })        
-        .state('app.selectmodule', {
-           url: "/selectmodule",
-           cache: false,
-           views: {
-               viewContent: {
-                 templateUrl: "templates/selectmodule.html",
-                 controller: 'SelectModuleController'
-               }
-           }
         })
         .state('app.certifications', {
             url: "/certifications",
@@ -106,6 +95,17 @@ angular.module('App', [
                   controller: 'EndObjectiveController'
                 }
             }
+        })
+
+        .state('app.selectModule', {
+           url: "/selectmodule",
+           cache: false,
+           views: {
+               viewContent: {
+                  templateUrl: "templates/select-module.html",
+                  controller: 'SelectModuleController'
+               }
+           }
         })
 
         .state('app.item', {

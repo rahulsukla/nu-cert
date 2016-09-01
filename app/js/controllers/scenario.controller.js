@@ -5,10 +5,11 @@
     .module('App')
     .controller('ScenarioController', ScenarioController);
 
-    ScenarioController.$inject = ['$scope', '$state'];
-    function ScenarioController($scope, $state) {
-      // $scope.submit = function () {
+    ScenarioController.$inject = ['$scope', '$state', '$ionicNavBarDelegate'];
+    function ScenarioController($scope, $state, $ionicNavBarDelegate) {
+      $ionicNavBarDelegate.showBackButton(false);
+      $scope.submitAnswer = function (answer) {
 
-      // }
+      }
     }
 })();

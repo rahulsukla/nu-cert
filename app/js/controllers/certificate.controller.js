@@ -9,12 +9,5 @@
     function CertificateController($scope, $state) {
       $scope.certificate = null;
 
-      activate();
-      ///////////
-
-      function activate() {
-        return 
-      }
-
     }
 })();

@@ -8,7 +8,7 @@
     EndObjectiveController.$inject = ['$scope', '$state'];
     function EndObjectiveController($scope, $state) {
       $scope.continueExam = function() {
-        $state.go('app.selectmodule')
+        $state.go('app.selectModule')
       };
     }
 })();

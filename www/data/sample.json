@@ -1,0 +1,146 @@
+[
+ {
+   "node_num": 1,
+   "question": "You are now in a Datacenter which has an Empty Rack, a Flat Switch, a Laptop with a Foundation VM in it, and a Nutanix package.",
+   "transitions": [
+     {
+       "key_words": ["open", "package"],
+       "target_node_num": 2,
+       "response": "The box contains NX-3450 Nodes with chassis in the boxes with required cables."
+     },
+     {
+       "key_words": ["open", "box"],
+       "target_node_num": 2,
+       "response": "The box contains NX-3450 Nodes with chassis in the boxes with required cables."
+     }
+   ]
+ },
+ {
+   "node_num": 2,
+   "question": "",
+   "transitions": [
+     {
+       "key_words": ["rack"],
+       "target_node_num": 3,
+       "response": "The nodes have now been racked."
+     },
+     {
+       "key_words": ["mount"],
+       "target_node_num": 3,
+       "response": "The nodes have now been racked."
+     },
+     {
+       "key_words": ["connect"],
+       "target_node_num": 3,
+       "response": "The nodes have now been racked."
+     }
+   ]
+ },
+ {
+   "node_num": 3,
+   "question": "",
+   "transitions": [
+     {
+       "key_words": ["foundation"],
+       "target_node_num": 4,
+       "response": "No nodes are visible in the Block & Node config Page of foundation."
+     },
+     {
+       "key_words": ["image"],
+       "target_node_num": 4,
+       "response": "No nodes are visible in the Block & Node config Page of foundation."
+     }
+   ]
+ },
+ {
+   "node_num": 4,
+   "question": "",
+   "transitions": [
+     {
+       "key_words": ["discover"],
+       "target_node_num": 5,
+       "response": "2 Blocks and 8 Nodes have now been discovered. However, we need 2 different clusters."
+     }
+   ]
+ },
+ {
+   "node_num": 5,
+   "question": "",
+   "transitions": [
+     {
+       "key_words": ["remove", "1", "block"],
+       "target_node_num": 6,
+       "response": "Done! Only 1 block with 4 nodes has been selected for imaging."
+     },
+     {
+       "key_words": ["remove", "2nd", "block"],
+       "target_node_num": 6,
+       "response": "Done! Only 1 block with 4 nodes has been selected for imaging."
+     },
+     {
+       "key_words": ["remove", "4", "nodes"],
+       "target_node_num": 6,
+       "response": "Done! Only 1 block with 4 nodes has been selected for imaging."
+     }
+   ]
+ },
+ {
+   "node_num": 6,
+   "question": "",
+   "transitions": [
+     {
+       "key_words": ["next"],
+       "target_node_num": 6,
+       "response": "Error on Foundation, global configuration page. Error: Global config: Fill in the empty value(s)"
+     },
+     {
+       "key_words": ["enter", "IPs"],
+       "target_node_num": 7,
+       "response": "IP address successfully configured. Node imaging page shows only 4.7 version available."
+     }
+   ]
+ },
+ {
+   "node_num": 7,
+   "question": "",
+   "transitions": [
+     {
+       "key_words": ["download", "4.7.1"],
+       "target_node_num": 8,
+       "response": "Download completed."
+     },
+     {
+       "key_words": ["download"],
+       "target_node_num": 7,
+       "response": "Which version?"
+     }
+   ]
+ },
+ {
+   "node_num": 8,
+   "question": "",
+   "transitions": [
+     {
+       "key_words": ["upload"],
+       "target_node_num": 9,
+       "response": "Upload completed. Version 4.7.1 is still not visible in the node imaging page."
+     }
+   ]
+ },
+ {
+   "node_num": 9,
+   "question": "",
+   "transitions": [
+     {
+       "key_words": ["refresh"],
+       "target_node_num": 10,
+       "response": "4.7.1 is now visible. Foundation is in progress <10 second delay>. Cluster A is now created. Congratulations, Foundation is now completed. Cluster B is also imaged and ready."
+     }
+   ]
+ },
+ {
+   "node_num": 10,
+   "question": "",
+   "transitions": []
+ }
+]

@@ -26,6 +26,7 @@ var paths = {
     styles: 'app/scss/**/*.*',
     templates: 'app/templates/**/*.*',
     images: 'app/img/**/*.*',
+    data: 'app/data/**/*.*',
     lib: 'www/lib/**/*.*',
     //Destination folders
     destImages: './www/img/',
@@ -155,6 +156,18 @@ gulp.task('watch', function() {
             var destPath = path.dirname(destPathFile);
             MinifyImages(pathFile, destPath).on('end', function() {
                 gulp.src('').pipe(notify({ message: 'Image built' }))
+            });
+        }
+    });
+    gulp.watch(paths.data, function(event){
+        var destPathFile = path.join('./www', path.relative(path.join(__dirname, './app'), event.path));
+        if(event.type === "deleted"){
+            del(destPathFile);
+        }else{
+            var pathFile = path.relative(__dirname, event.path);
+            var destPath = path.dirname(destPathFile);
+            MinifyImages(pathFile, destPath).on('end', function() {
+                gulp.src('').pipe(notify({ message: 'Data built' }))
             });
         }
     });

@@ -250,6 +250,107 @@ body {
 .scenarioView p.error-description {
   color: red; }
 
+.topic_num {
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0px;
+  line-height: 12px; }
+  .topic_num span {
+    display: block;
+    margin-bottom: .5em;
+    font-weight: 400;
+    font-size: 12px; }
+
+.topic_contents {
+  font-size: 22px;
+  color: #FFFFFF;
+  letter-spacing: 0px;
+  line-height: 12px;
+  padding-bottom: 12px; }
+
+.topic_tiles {
+  width: 50px;
+  height: 50px;
+  margin: 27px;
+  float: left; }
+
+.unlockflowline {
+  width: 3px;
+  height: 25px;
+  background: rgba(25, 43, 100, 0.7);
+  box-shadow: 0px 4px 12px 0px rgba(21, 38, 91, 0.1);
+  margin: 0 auto; }
+
+.lockflowline {
+  width: 3px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 12px 0px rgba(21, 38, 91, 0.1);
+  margin: 0 auto; }
+
+.selectModuleView {
+  background: #2666AE; }
+
+.unlockcircle {
+  padding-top: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: rgba(25, 43, 100, 0.7);
+  box-shadow: 0px 4px 12px 0px rgba(21, 38, 91, 0.1);
+  margin: 0 auto; }
+
+.lockcircle {
+  padding-top: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 12px 0px rgba(21, 38, 91, 0.1);
+  margin: 0 auto; }
+
+.unlockimg {
+  padding-top: 15px;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  background: #7BCC00;
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+  margin: 27px;
+  float: left; }
+
+.lockimg {
+  padding-top: 15px;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  background: rgba(0, 58, 133, 0.5);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+  margin: 27px;
+  float: left; }
+
+.unlockrectangle {
+  padding-top: 20px;
+  width: 315px;
+  height: 132px;
+  background: rgba(25, 43, 100, 0.7);
+  box-shadow: 0px 4px 12px 0px rgba(21, 38, 91, 0.1);
+  border-radius: 4px;
+  margin: 0 auto; }
+
+.lockrectangle {
+  padding-top: 20px;
+  width: 315px;
+  height: 132px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 12px 0px rgba(21, 38, 91, 0.1);
+  border-radius: 4px;
+  margin: 0 auto; }
+
 body, input, .popover, .tooltip {
   font-family: 'ProximaNovaSoft', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 12px;

@@ -23,8 +23,8 @@
           $state.go('app.certificate');
       };
 
-      $scope.selectCertification = function (certID) {
-        $state.go('app.certifications', { certID: certID});
+      $scope.selectCertification = function () {
+        $state.go('app.certifications');
       }
     }
 })();
