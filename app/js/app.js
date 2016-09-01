@@ -65,6 +65,17 @@ angular.module('App', [
             }
         })
 
+        .state('app.congratulations', {
+            url: "/congratulations",
+            cache: false,
+            views: {
+                viewContent: {
+                  templateUrl: "templates/congratulations.html",
+                  controller: 'CongratulationsController'
+                }
+            }
+        })
+
         .state('app.scenario', {
             url: "/scenario",
             cache: false,

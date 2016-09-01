@@ -5,10 +5,9 @@
     .module('App')
     .controller('CertificationsController', CertificationsController);
 
-    CertificationsController.$inject = ['$scope', '$state', 'certificationsService'];
+    CertificationsController.$inject = ['$scope', '$state', 'certificationsService', '$ionicNavBarDelegate'];
     function CertificationsController($scope, $state, certificationsService) {
       $scope.certifications = null;
-
       // activate();
       // ////////////
 
