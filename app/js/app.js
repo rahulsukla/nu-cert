@@ -75,7 +75,17 @@ angular.module('App', [
                 }
             }
         })
-
+        
+.state('app.selectmodule', {
+           url: "/selectmodule",
+           cache: false,
+           views: {
+               viewContent: {
+                 templateUrl: "templates/selectmodule.html",
+                 controller: 'SelectModuleController'
+               }
+           }
+       })
         .state('app.certifications', {
             url: "/certifications",
             cache: false,
