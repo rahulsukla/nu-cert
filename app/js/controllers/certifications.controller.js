@@ -9,17 +9,17 @@
     function CertificationsController($scope, $state, certificationsService) {
       $scope.certifications = null;
 
-      activate();
-      ////////////
+      // activate();
+      // ////////////
 
-      function activate() {
-        certificationsService.getAllCertifications()
-          .then(function(certifications){
-            $scope.certifications = certifications;
-          });
-      }
+      // function activate() {
+      //   certificationsService.getAllCertifications()
+      //     .then(function(certifications){
+      //       $scope.certifications = certifications;
+      //     });
+      // }
 
-      $scope.openItem = function(){
+      $scope.openCertificate = function(){
           $state.go('app.certificate');
       };
 

@@ -62,6 +62,7 @@ angular.module('App', [
                   templateUrl: "templates/certificate.html",
                   controller: 'CertificateController'
                 }
+
             }
         })
 

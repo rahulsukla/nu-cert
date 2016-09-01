@@ -7,8 +7,8 @@
 
     EndObjectiveController.$inject = ['$scope', '$state'];
     function EndObjectiveController($scope, $state) {
-      $scope.beginCertification = function() {
-        $state.go('app.scenario')
+      $scope.continueExam = function() {
+        $state.go('app.selectmodule')
       };
     }
 })();

@@ -1,161 +1,129 @@
 .topic_num{    
-    /* 1: */
-    font-family: AppleSystemUIFont;
-    font-size: 14px;
-    color: #FFFFFF;
-    letter-spacing: 0px;
-    line-height: 12px;
+   /* 1: */
+   font-family: AppleSystemUIFont;
+   font-size: 14px;
+   color: #FFFFFF ;
+   letter-spacing: 0px;
+   line-height: 12px;
 }
 
 .topic_contents{    
-    /* 1: */
-    font-family: AppleSystemUIFont;
-    font-size: 22px;
-    color: #FFFFFF;
-    letter-spacing: 0px;
-    line-height: 12px;
-    padding-bottom: 12px;
+   /* 1: */
+   font-family: AppleSystemUIFont;
+   font-size: 22px;
+   color: #FFFFFF ;
+   letter-spacing: 0px;
+   line-height: 12px;
+   padding-bottom: 12px;
 }
 
 .topic_tiles{    
-    /* Rectangle 7: */
-    width: 50px;
-    height: 50px;
-    box-shadow: 0px 4px 12px 0px rgba(21,38,91,0.10);
-    margin: 27px;; 
-    float: left;
+   /* Rectangle 7: */
+   width: 50px;
+   height: 50px;
+   box-shadow: 0px 4px 12px 0px rgba(21,38,91,0.10);
+   margin: 27px;; 
+   float: left;
 }
 
 .unlockflowline{
-    /* Rectangle 7: */
-    width: 3px;
-    height: 25px;
-    background: rgba(25,43,100,0.70);
-    box-shadow: 0px 4px 12px 0px rgba(21,38,91,0.10);
-    margin: 0 auto; 
+   /* Rectangle 7: */
+   width: 3px;
+   height: 25px;
+   background: rgba(25,43,100,0.70);
+   box-shadow: 0px 4px 12px 0px rgba(21,38,91,0.10);
+   margin: 0 auto; 
 }
 
 .lockflowline{
-    /* Rectangle 7: */
-    width: 3px;
-    height: 25px;
-    background: rgba(255,255,255,0.10);
-    box-shadow: 0px 4px 12px 0px rgba(21,38,91,0.10);
-    margin: 0 auto; 
+   /* Rectangle 7: */
+   width: 3px;
+   height: 25px;
+   background: rgba(255,255,255,0.10);
+   box-shadow: 0px 4px 12px 0px rgba(21,38,91,0.10);
+   margin: 0 auto; 
 }
 
 .selectModuleView{
-    /* Rectangle 8: */
-    /*background-image: linear-gradient(-180deg, #2666AE  0%, #234087  100%);*/
-    background: #2666AE;
+   /* Rectangle 8: */
+   /*background-image: linear-gradient(-180deg, #2666AE   0%, #234087  100%);*/
+   background: #2666AE ;
 }
 
-  
+ 
 .unlockcircle {
-  padding-top: 15px;
-   width: 50px;
-     height: 50px;
-     -webkit-border-radius: 25px;
-     -moz-border-radius: 25px;
-     border-radius: 25px;
-     /* Oval 3: */
-    background: rgba(25,43,100,0.70);
-    box-shadow: 0px 4px 12px 0px rgba(21,38,91,0.10);
-    margin: 0 auto; 
+ padding-top: 15px;
+  width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    /* Oval 3: */
+   background: rgba(25,43,100,0.70);
+   box-shadow: 0px 4px 12px 0px rgba(21,38,91,0.10);
+   margin: 0 auto; 
 }
 
 .lockcircle {
-  padding-top: 15px;
-   width: 50px;
-     height: 50px;
-     -webkit-border-radius: 25px;
-     -moz-border-radius: 25px;
-     border-radius: 25px;
-     /* Oval 3: */
-    background: rgba(255,255,255,0.10);
-    box-shadow: 0px 4px 12px 0px rgba(21,38,91,0.10);
-    margin: 0 auto; 
+ padding-top: 15px;
+  width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    /* Oval 3: */
+   background: rgba(255,255,255,0.10);
+   box-shadow: 0px 4px 12px 0px rgba(21,38,91,0.10);
+   margin: 0 auto; 
 }
 
 .unlockimg {
-  padding-top: 15px;
-   width: 50px;
-     height: 50px;
-     -webkit-border-radius: 25px;
-     -moz-border-radius: 25px;
-  /* Button: */
-  background: #7BCC00;
-  box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.30);
-  border-radius: 100px;
-    margin: 27px;
-    float: left;
+ padding-top: 15px;
+  width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+ /* Button: */
+ background: #7BCC00 ;
+ box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.30);
+ border-radius: 100px;
+   margin: 27px;
+   float: left;
 }
 
 .lockimg {
-  padding-top: 15px;
-   width: 50px;
-     height: 50px;
-     -webkit-border-radius: 25px;
-     -moz-border-radius: 25px;
-  /* Button: */
-  background: rgba(0,58,133,0.50);
-  box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.30);
-  border-radius: 100px;
-    margin: 27px;
-    float: left;
+ padding-top: 15px;
+  width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+ /* Button: */
+ background: rgba(0,58,133,0.50);
+ box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.30);
+ border-radius: 100px;
+   margin: 27px;
+   float: left;
 }
 
 .unlockrectangle{
-  /* Rectangle 12: */
-  padding-top:20px;
-  width: 315px;
-  height: 132px;
-  background: rgba(25,43,100,0.70);
-  box-shadow: 0px 4px 12px 0px rgba(21,38,91,0.10);
-  border-radius: 4px;
-  margin: 0 auto; 
+ /* Rectangle 12: */
+ padding-top:20px;
+ width: 315px;
+ height: 132px;
+ background: rgba(25,43,100,0.70);
+ box-shadow: 0px 4px 12px 0px rgba(21,38,91,0.10);
+ border-radius: 4px;
+ margin: 0 auto; 
 }
 
 .lockrectangle{
-  /* Rectangle 12: */
-  padding-top:20px;
-  width: 315px;
-  height: 132px;
-  background: rgba(255,255,255,0.10);
-  box-shadow: 0px 4px 12px 0px rgba(21,38,91,0.10);
-  border-radius: 4px;
-  margin: 0 auto; 
-=======
-.topic_num{	
-	/* Oval 3: */
-	background: rgba(25,43,100,0.70);
-	box-shadow: 0px 4px 12px 0px rgba(21,38,91,0.10);
+ /* Rectangle 12: */
+ padding-top:20px;
+ width: 315px;
+ height: 132px;
+ background: rgba(255,255,255,0.10);
+ box-shadow: 0px 4px 12px 0px rgba(21,38,91,0.10);
+ border-radius: 4px;
+ margin: 0 auto; 
 }
 
-.flow_line{
-	/* Rectangle 7: */
-	background: rgba(25,43,100,0.70);
-	box-shadow: 0px 4px 12px 0px rgba(21,38,91,0.10);
-}
-
-.selectModuleView{
-	/* Rectangle 8: */
-	background-image: linear-gradient(-180deg, #2666AE 0%, #234087 100%);
-}
-
-.oval{
-	/* 1: */
-	font-family: .AppleSystemUIFont;
-	font-size: 14px;
-	color: #FFFFFF;
-	letter-spacing: 0px;
-	line-height: 12px;
-}
-#path-1 {
-    width: 100px;
-    height: 100px;
-    background: red;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-}
