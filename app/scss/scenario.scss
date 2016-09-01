@@ -25,10 +25,19 @@
 
 .scenarioView {
   p.scenario-instruction{
+    bottom: 0;
     font-size: 1.8em;
     line-height: 1.2em;
   }
   p.error-description {
-    color: red;
+    right: 0;
+    left: 0;
+    color: white;
+    bottom: 60px;
+    position: absolute;
+    padding: 5px;
+    background: #FC4349;
+    display: block;
+    text-align: center;
   }
 }

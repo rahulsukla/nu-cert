@@ -15,6 +15,7 @@
         <p class="scenario-instruction">{{ scenarios[questionCounter].question }}</p>
       </div>
     </div>
+    <p class="error-description" ng-show="scenarios[questionCounter].error">{{ scenarios[questionCounter].error }}</p>
   </ion-content>
   <div class="bar bar-footer common-footer scenario-footer">
     <div class="list footer-input">
