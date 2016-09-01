@@ -247,11 +247,20 @@ body {
     background: #1D3B77; }
 
 .scenarioView p.scenario-instruction {
+  bottom: 0;
   font-size: 1.8em;
   line-height: 1.2em; }
 
 .scenarioView p.error-description {
-  color: red; }
+  right: 0;
+  left: 0;
+  color: white;
+  bottom: 60px;
+  position: absolute;
+  padding: 5px;
+  background: #FC4349;
+  display: block;
+  text-align: center; }
 
 .topic_num {
   font-size: 14px;
@@ -313,7 +322,6 @@ body {
   margin: 0 auto; }
 
 .unlockimg {
-  padding-top: 15px;
   width: 50px;
   height: 50px;
   -webkit-border-radius: 25px;
@@ -323,9 +331,10 @@ body {
   border-radius: 100px;
   margin: 27px;
   float: left; }
+  .unlockimg img {
+    max-width: 4em; }
 
 .lockimg {
-  padding-top: 15px;
   width: 50px;
   height: 50px;
   -webkit-border-radius: 25px;
@@ -335,6 +344,12 @@ body {
   border-radius: 100px;
   margin: 27px;
   float: left; }
+  .lockimg img {
+    max-width: 4em; }
+
+.pad-lock img {
+  max-width: 1.5em;
+  padding-top: 1em; }
 
 .unlockrectangle {
   padding-top: 20px;
