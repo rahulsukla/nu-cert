@@ -12,7 +12,7 @@
   <ion-content>
     <div class="row row-center row-no-padding">
       <div class="col col-center">
-        <p class="scenario-instruction">You are now in a Datacenter which has an Empty Rack, a Flat Switch, Laptop with Foundation VM on it, and package from Nutanix.</p>
+        <p class="scenario-instruction">{{ scenarios[questionCounter].question }}</p>
       </div>
     </div>
   </ion-content>
@@ -20,7 +20,7 @@
     <div class="list footer-input">
       <form ng-submit="submitAnswer()">
         <label class="item item-input">
-          <input type="text" placeholder="Type your answer">
+          <input type="text" placeholder="Type your answer" ng-model="searchString">
         </label>
         <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"/>
       </form>
