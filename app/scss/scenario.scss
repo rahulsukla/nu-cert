@@ -1,14 +1,25 @@
 .scenario-footer {
+  padding: 0;
   height: 60px;
   .list {
     padding-top: 0;
     padding-bottom: 0;
+    width: 100%;
   }
   input {
     font-size: 20px;
+    padding: 0 10px;
+    color: white;
+    &::placeholder {
+      color: white;
+      opacity: .5;
+    };
   }
   .item {
-    height: 50px;
+    height: 60px;
+    background: none;
+    border-radius: 0;
+    background: #1D3B77;
   }
 }
 

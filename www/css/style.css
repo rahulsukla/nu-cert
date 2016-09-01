@@ -6,33 +6,23 @@
   .certificate-card h2 {
     margin: 20px 0; }
   .certificate-card .avatar img {
-    position: relative;
-    max-width: 80px;
-    border-radius: 50%;
-    margin: 50px 0; }
+    max-width: 15em;
+    margin: 2em 0; }
   .certificate-card .item {
     background: none; }
-
-.seperator {
-  max-width: 100px;
-  margin: 0 auto;
-  border: 1px solid white;
-  margin-bottom: 20px; }
 
 .item {
   padding: 5px;
   border: none;
   border-radius: 5px; }
 
-.row-no-padding .col {
-  padding: 0; }
+.cetificationsView .item {
+  background: none; }
 
-.row-no-padding .certification-item {
-  margin: .5em; }
-
-.certification-tile {
-  height: 100px;
-  background: white; }
+.cetificationsView .certification-tile {
+  background: none; }
+  .cetificationsView .certification-tile img {
+    width: 100%; }
 
 
 @media (min-width: 680px) {
@@ -72,13 +62,61 @@
   animation: fadeInLeft 1s; }
 
 .scroll {
+  background-image: linear-gradient(-180deg, #2666AE 0%, #234087 100%);
   background: #2666AE; }
+
+.bar.nu-cert-navigation {
+  background: #2666AE;
+  background-image: none; }
 
 .col-45 {
   -moz-flex: 0 0 45%;
   -ms-flex: 0 0 45%;
   flex: 0 0 45%;
   max-width: 45%; }
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .item p {
+  color: white; }
+
+.seperator {
+  margin: 0 auto;
+  margin: 1em 0; }
+  .seperator img {
+    max-width: 5em; }
+
+.item h2 {
+  font-weight: 600; }
+
+.item p {
+  font-size: 13px; }
+
+/* footer styles */
+.common-footer {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  background: none; }
+  .common-footer p {
+    margin: 0 auto; }
+  .common-footer a {
+    margin-left: .5em; }
+
+/* anchor styles */
+a {
+  color: #A0D210;
+  text-decoration: none; }
+
+/* next button */
+.continue-button {
+  margin-top: 2em;
+  background: none;
+  border: none; }
+  .continue-button img {
+    max-width: 3em; }
+
+.button-clear img {
+  max-width: 1.2em; }
 
 /* ProximaNovaSoft */
 @font-face {
@@ -108,7 +146,11 @@
 .homeView {
   color: white; }
   .homeView button {
-    font-size: 26px; }
+    background: transparent;
+    border: none; }
+    .homeView button img {
+      padding: 2em 0;
+      max-width: 3.5em; }
   .homeView .scroll-content .scroll {
     height: 100%;
     padding: 20px; }
@@ -143,18 +185,63 @@ body {
 .logo-container img {
   max-width: 12em; }
 
-.login-form input {
-  background: rgba(255, 255, 255, 0.1); }
+.login-form .list-inset {
+  background-color: transparent; }
+
+.login-form .list-inset .item.item-input input {
+  padding-right: 0; }
+
+.login-form .item-input {
+  padding: 1px;
+  border-color: transparent; }
+  .login-form .item-input input {
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    background: rgba(39, 103, 176, 0.8);
+    height: 50px; }
+    .login-form .item-input input::-webkit-input-placeholder {
+      color: white;
+      opacity: .5; }
+    .login-form .item-input input::-moz-placeholder {
+      color: white;
+      opacity: .5; }
+    .login-form .item-input input:-ms-input-placeholder {
+      color: white;
+      opacity: .5; }
+    .login-form .item-input input::placeholder {
+      color: white;
+      opacity: .5; }
 
 .scenario-footer {
+  padding: 0;
   height: 60px; }
   .scenario-footer .list {
     padding-top: 0;
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    width: 100%; }
   .scenario-footer input {
-    font-size: 20px; }
+    font-size: 20px;
+    padding: 0 10px;
+    color: white; }
+    .scenario-footer input::-webkit-input-placeholder {
+      color: white;
+      opacity: .5; }
+    .scenario-footer input::-moz-placeholder {
+      color: white;
+      opacity: .5; }
+    .scenario-footer input:-ms-input-placeholder {
+      color: white;
+      opacity: .5; }
+    .scenario-footer input::placeholder {
+      color: white;
+      opacity: .5; }
   .scenario-footer .item {
-    height: 50px; }
+    height: 60px;
+    background: none;
+    border-radius: 0;
+    background: #1D3B77; }
 
 .scenarioView p.scenario-instruction {
   font-size: 1.8em;
@@ -212,11 +299,24 @@ p + ol, p + ul, ul + p, ol + p {
 }
 */
 
-.objective-modal-container {
-  padding: 20px; }
+.ObjectiveView .objective-card {
+  margin: 20px;
+  padding: 10px; }
+  .ObjectiveView .objective-card .avatar img {
+    max-width: 12em; }
 
-.footer-container {
-  margin: 15px; }
+.ObjectiveView button {
+  margin-top: 3em; }
+  .ObjectiveView button img {
+    max-width: 4em; }
+
+.ObjectiveView .certificate-card {
+  background: rgba(25, 43, 100, 0.7);
+  box-shadow: 0px 4px 12px 0px rgba(21, 38, 91, 0.3);
+  border-radius: 4px; }
+
+.close-icon img {
+  max-width: 2em; }
 
 .popoverView {
   background-color: #4E5E6E !important; }

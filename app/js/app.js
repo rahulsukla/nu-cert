@@ -86,6 +86,18 @@ angular.module('App', [
                 }
             }
         })
+
+        .state('app.endObjective', {
+            url: "/end-objective",
+            cache: false,
+            views: {
+                viewContent: {
+                  templateUrl: "templates/end-objective.html",
+                  controller: 'EndObjectiveController'
+                }
+            }
+        })
+
         .state('app.item', {
             url: "/item/{title}",
             params: {

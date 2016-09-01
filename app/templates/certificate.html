@@ -1,4 +1,7 @@
 <ion-view view-title="" class="galleryView">
+  <ion-nav-title>
+    About
+  </ion-nav-title>
   <ion-content>
     <div class="row row-wrap row-no-padding">
       <!-- <ion-item ng-repeat="certification in certifications" class="col col-45 button button-icon light animated bounceInUp" ng-style="{ 'background-color' : certification.color }" on-tap="openItem(certification)">
@@ -7,22 +10,22 @@
       </ion-item> -->
       <div class="list certificate-card">
         <div class="avatar">
-          <img src="mcfly.jpg">
+          <img src="img/nppcertificatebig.png">
         </div>
-        <h2>Nutanix Platform Professional Certification</h2>
 
-        <div class="seperator"> </div>
+        <div class="seperator">
+          <img src="img/seperator.png">
+        </div>
 
         <div class="item item-body">
-          <h3>About</h3>
+          <h2>ABOUT</h2>
           <p>
-            This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-            the content is from a card-body consisting of an image and paragraph text. The footer
-            consists of tabs, icons aligned left, within the card-footer.
+            The Nutanix Platform Professional (NPP) certification confirms your ability to install, configure, and manage the Nutanix environment. The Nutanix Administration course is recommended prior to taking the certification.
           </p>
         </div>
-        <button class="button button-full button-dark" on-tap="openObjectiveModal()">
-          Begin Certification
+        <!-- on-tap="openObjectiveModal()" -->
+        <button ui-sref="app.endObjective"  class="continue-button">
+          <img src="img/actionbuttonbig.png">
         </button>
       </div>
 

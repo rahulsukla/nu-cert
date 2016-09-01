@@ -19,13 +19,15 @@
           </form>
 				</div>
         <p ng-if="invalidLogin"> Sorry! credentials were wrong</p>
-				<button class="button button-block button-positive animated bounceInUp" ui-sref="app.certifications" on-tap="login()"
-          ng-disabled="submitting">
-					Login
-				</button>
-        <div class="sticky-footer">
-          <p>Don't have a account ? <a href="">Sign Up</a></p>
+        <button ui-sref="app.certifications" on-tap="login()" ng-disabled="submitting">
+          <img src="img/actionbuttonbig.png">
+        </button>
+        <div class="bar bar-footer common-footer">
+          <p class="footer-help">Don’t have an account?
+            <a href="">Sign Up</a>
+          </p>
         </div>
+
 			</div>
 		</div>
 	</ion-content>

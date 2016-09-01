@@ -1,7 +1,12 @@
 .homeView{
 	color: white;
 	button{
-		font-size: 26px;
+		background: transparent;
+    border: none;
+    img {
+    	padding: 2em 0;
+    	max-width: 3.5em;
+    }
 	}
 	.scroll-content {
 		.scroll{
@@ -49,7 +54,26 @@ body {
 }
 
 .login-form {
-	input {
-		background: rgba(255,255,255,0.10);
+	.list-inset {
+		background-color: transparent;
+	}
+	.list-inset .item.item-input input {
+		padding-right: 0;
+	}
+	.item-input {
+		padding: 1px;
+		border-color: transparent;
+		input {
+			text-align: center;
+			font-weight: 600;
+			font-size: 15px;
+			color: white;
+			background: rgba(39,103,176,0.8);
+			height: 50px;
+			&::placeholder {
+				color: white;
+				opacity: .5;
+			}
+		}
 	}
 }

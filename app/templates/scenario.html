@@ -1,13 +1,30 @@
 <ion-view view-title="" class="homeView scenarioView">
+  <ion-nav-buttons side="left">
+    <button class="button button-icon button-clear" menu-toggle="left">
+      Quit
+    </button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button button-icon button-clear">
+      <img src="img/objective.png">
+    </button>
+  </ion-nav-buttons>
   <ion-content>
-    <div class="row row-wrap row-no-padding">
-      <div class="col col-center text-center">
+    <div class="row row-center row-no-padding">
+      <div class="col col-center">
         <p class="scenario-instruction">You are now in a Datacenter which has an Empty Rack, a Flat Switch, Laptop with Foundation VM on it, and package from Nutanix.</p>
       </div>
     </div>
-    <div class="sticky-footer">
-
-    </div>
   </ion-content>
+  <div class="bar bar-footer common-footer scenario-footer">
+    <div class="list footer-input">
+      <form ng-submit="submitLogin()">
+        <label class="item item-input">
+          <input type="text" placeholder="Type your answer">
+        </label>
+        <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"/>
+      </form>
+    </div>
+  </div>
 </ion-view>
 

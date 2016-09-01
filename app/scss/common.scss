@@ -44,7 +44,13 @@
 }
 
 .scroll {
+  background-image: linear-gradient(-180deg, #2666AE 0%, #234087 100%);
   background: #2666AE;
+}
+
+.bar.nu-cert-navigation {
+  background: #2666AE;
+  background-image: none;
 }
 
 .col-45 {
@@ -55,4 +61,62 @@
   -ms-flex: 0 0 45%;
   flex: 0 0 45%;
   max-width: 45%;
+}
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .item p {
+  color: white;
+}
+
+.seperator {
+  margin: 0 auto;
+  margin: 1em 0;
+  img {
+    max-width: 5em;
+  }
+}
+.item {
+  h2 {
+    font-weight: 600;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+
+/* footer styles */
+.common-footer {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  background: none;
+  p {
+    margin: 0 auto;
+  }
+  a {
+    margin-left: .5em;
+  }
+}
+/* anchor styles */
+
+a {
+  color: #A0D210;
+  text-decoration: none;
+}
+
+
+/* next button */
+.continue-button {
+  margin-top: 2em;
+  background: none;
+  border:none;
+  img {
+    max-width: 3em;
+  }
+}
+.button-clear {
+  img {
+    max-width: 1.2em;
+  }
 }

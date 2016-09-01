@@ -4,16 +4,14 @@
   border-radius: 5px;
 }
 
-.row-no-padding {
-  .col {
-    padding: 0;
+.cetificationsView {
+  .item {
+    background: none;
   }
-  .certification-item {
-    margin: .5em;
+  .certification-tile{
+    background: none;
+    img {
+      width: 100%;
+    }
   }
-}
-
-.certification-tile{
-  height: 100px;
-  background: white;
 }

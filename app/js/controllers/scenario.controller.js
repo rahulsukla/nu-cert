@@ -7,6 +7,8 @@
 
     ScenarioController.$inject = ['$scope', '$state'];
     function ScenarioController($scope, $state) {
+      // $scope.submit = function () {
 
+      // }
     }
 })();
