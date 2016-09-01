@@ -1,0 +1,27 @@
+.certificate-card {
+  width: 100;
+  overflow: hidden;
+  margin: 20px 10px;
+  text-align: center;
+  h2 {
+    margin: 20px 0;
+  }
+  .avatar {
+    img {
+      position: relative;
+      max-width: 80px;
+      border-radius: 50%;
+      margin: 50px 0;
+    }
+  }
+  .item {
+    background: none;
+  }
+}
+
+.seperator {
+  max-width: 100px;
+  margin: 0 auto;
+  border: 1px solid white;
+  margin-bottom: 20px;
+}

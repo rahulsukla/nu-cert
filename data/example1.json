@@ -1,0 +1,65 @@
+[
+	{
+	  "node_num": 1,
+	  "question": "Are you having fun now? example1",
+	  "transitions": [
+	    {
+	      "key_words": ["yes"],
+	      "target_node_num": 2 
+	    },
+	    {
+	      "key_words": ["no"],
+	      "target_node_num": 3
+	    },
+	    {
+	      "key_words": ["not", "sure"],
+	      "target_node_num": 4
+	    }
+	  ]
+	},
+	{
+	  "node_num": 2,
+	  "question": "Good for you! Bye!",
+	  "transitions": [
+	    {
+	      "key_words": ["bye"],
+	      "target_node_num": 5
+	    }
+	  ]
+	},
+	{
+	  "node_num": 3,
+	  "question": "That's too bad! Bye!",
+	  "transitions": [
+	    {
+	      "key_words": ["bye"],
+	      "target_node_num": 5
+	    }
+	  ]
+	},
+	{
+	  "node_num": 4,
+	  "question": "Err, okay. Bye.",
+	  "transitions": [
+	    {
+	      "key_words": ["bye"],
+	      "target_node_num": 5
+	    }
+	  ]
+	},
+	{
+	  "node_num": 2,
+	  "question": "Good for you! Bye!",
+	  "transitions": [
+	    {
+	      "key_words": ["bye"],
+	      "target_node_num": 5
+	    }
+	  ]
+	},
+	{
+	  "node_num": 5,
+	  "question": "Thanks for playing!",
+	  "transitions": []
+	}
+]

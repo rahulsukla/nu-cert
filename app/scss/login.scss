@@ -1,0 +1,55 @@
+.homeView{
+	color: white;
+	button{
+		font-size: 26px;
+	}
+	.scroll-content {
+		.scroll{
+			height: 100%;
+			padding: 20px;
+			.row-center {
+				height: 100%;
+			}
+			.list-input {
+				margin: 1em 0;
+				label {
+					border-radius: 3px;
+				}
+			}
+		}
+	}
+	h1 {
+		color: white;
+	}
+}
+@keyframes background {
+	0%{background-position:1% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:1% 0%}
+}
+
+body {
+	font-family: 'ProximaNovaSoft';
+}
+
+.sticky-footer {
+	position: absolute;
+	bottom: 1em;
+	left: 0;
+	right: 0;
+	button {
+	margin: 20px 0;
+	}
+}
+
+.logo-container {
+	img {
+		max-width: 12em;
+	}
+}
+
+.login-form {
+	input {
+		background: rgba(255,255,255,0.10);
+	}
+}

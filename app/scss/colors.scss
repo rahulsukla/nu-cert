@@ -1,0 +1,80 @@
+// Color swatch
+// Only use colors from here, do not use color codes directly
+
+$white: #ffffff;
+$black: #000000;
+
+// Dark
+$dark-1: #2d2e2f;
+$dark-2: #343536;
+$dark-3: #3f4142;
+$dark-4: #6f787e;
+$dark-5: #89949b;
+
+$dark-6: #454748;
+$dark-7: #797a7b;
+
+// Light
+$light-1: #f7f7f9;
+$light-2: #f3f4f5;
+$light-3: #dbdfe1;
+$light-4: #c4c9cd;
+$light-5: #9aa8b1;
+
+$light-6: #aaaaaa;
+
+// Blue
+$blue-1: #1790bb;
+$blue-2: #26bbf0;
+$blue-3: #7dd6f6;
+$blue-4: #a8e4f9;
+$blue-5: #d4f1fc;
+
+$blue-6: #1ea5d5;
+$blue-7: #d8e5e9;
+$blue-8: #ebf9fc;
+
+$blue-9: #5F96E3;
+$blue-10: #E8F0FA;
+
+
+// Red
+$red-1: #a9484b;
+$red-2: #cc6164;
+$red-3: #d88486;
+$red-4: #ebc0c1;
+$red-5: #f7e6e7;
+
+// Yellow
+$yellow-1: #d9a116;
+$yellow-2: #ffbc0b;
+$yellow-3: #ffd053;
+$yellow-4: #ffe49c;
+$yellow-5: #fff6dd;
+
+$yellow-6: #D9A300;
+
+// Green
+$green-1: #98b36a;
+$green-2: #c2d5a0;
+$green-3: #dae6c6;
+$green-4: #e7eed9;
+$green-5: #f3f8ec;
+
+$green-6: #8BA85B;
+
+// Turquoise
+$turquoise-1: #9bbfb3;
+$turquoise-2: #adccc2;
+$turquoise-3: #d4e8e2;
+$turquoise-4: #e3f0eb;
+$turquoise-5: #f1f7f5;
+
+$turquoise-6: #89ab9f;
+
+// Helpers
+$border-color: $light-3;
+$text-color: $dark-2;
+
+// Tooltip background
+$tooltip-bg: #525455;

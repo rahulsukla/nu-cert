@@ -1,0 +1,19 @@
+.item {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.row-no-padding {
+  .col {
+    padding: 0;
+  }
+  .certification-item {
+    margin: .5em;
+  }
+}
+
+.certification-tile{
+  height: 100px;
+  background: white;
+}

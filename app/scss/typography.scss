@@ -1,0 +1,60 @@
+body, input, .popover, .tooltip {
+  font-family: 'ProximaNovaSoft', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, input, button, select, textarea {
+  font-family: 'ProximaNovaSoft', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+p {
+  margin: 0;
+}
+
+h2 {
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 600;
+  margin: 0;
+}
+
+h3, h4, h5, h6 {
+  font-size: 12px;
+  line-height: 100%;
+  font-weight: 600;
+  margin: 0;
+}
+
+// Text spacing
+
+p + p {
+  margin-top: 14px;
+}
+
+h2 + p {
+  margin-top: 12px;
+}
+
+h3 + p {
+  margin-top: 17px;
+}
+
+h4 + p {
+  margin-top: 7px;
+}
+
+p + ol, p + ul, ul + p, ol + p {
+  margin-top: 17px;
+}
+/*
+.instructions {
+  color: @dark-5;
+}
+
+.modal-instructions {
+  color: @dark-4;
+}
+*/

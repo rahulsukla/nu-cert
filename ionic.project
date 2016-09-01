@@ -1,0 +1,16 @@
+{
+  "name": "App",
+  "app_id": "22a68333",
+  "proxies": [
+    {
+      "path": "/login",
+      "proxyUrl": "http://localhost:8080/login"
+    }
+  ],
+  "gulpStartupTasks": [
+    "watch"
+  ],
+  "watchPatterns": [
+    "app/**/*"
+  ]
+}

@@ -1,0 +1,23 @@
+.scenario-footer {
+  height: 60px;
+  .list {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  input {
+    font-size: 20px;
+  }
+  .item {
+    height: 50px;
+  }
+}
+
+.scenarioView {
+  p.scenario-instruction{
+    font-size: 1.8em;
+    line-height: 1.2em;
+  }
+  p.error-description {
+    color: red;
+  }
+}

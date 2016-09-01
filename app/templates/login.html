@@ -1,0 +1,32 @@
+<ion-view class="homeView" view-title="Home" hide-nav-bar="true">
+	<ion-content>
+		<div class="row row-center">
+			<div class="col col-center text-center">
+        <div class="logo-container">
+          <img src="img/NuCertLogo.png">
+        </div>
+				<h1 class="animated bounceInDown logo-text">NuCert</h1>
+				<div id="container" class="animated bounceInLeft">
+          <form class="form-horizontal login-form">
+            <div class="list list-inset">
+              <label class="item item-input">
+                <input type="text" placeholder="Username" ng-model="userData.user_name">
+              </label>
+              <label class="item item-input">
+                <input type="text" placeholder="Password" ng-model="userData.password">
+              </label>
+            </div>
+          </form>
+				</div>
+        <p ng-if="invalidLogin"> Sorry! credentials were wrong</p>
+				<button class="button button-block button-positive animated bounceInUp" ui-sref="app.certifications" on-tap="login()"
+          ng-disabled="submitting">
+					Login
+				</button>
+        <div class="sticky-footer">
+          <p>Don't have a account ? <a href="">Sign Up</a></p>
+        </div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

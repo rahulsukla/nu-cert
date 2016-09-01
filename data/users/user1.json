@@ -1,0 +1,12 @@
+{
+	"name": "zork1",
+	"email": "zork1@nutanix.com",
+	"certs": [
+		{ 
+			"name": "npp",
+			"state": "started",
+			"total_scenarios": 9,
+			"scenarios": ["s1", "scenario2"]
+		}
+	]
+}
