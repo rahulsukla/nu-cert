@@ -217,6 +217,11 @@ body {
       color: white;
       opacity: .5; }
 
+.drawer-image {
+  top: -44px; }
+  .drawer-image img {
+    max-width: 100%; }
+
 .scenario-footer {
   padding: 0;
   height: 60px; }
@@ -261,6 +266,13 @@ body {
   background: #FC4349;
   display: block;
   text-align: center; }
+
+.scenarioView .question-progress-bar {
+  right: 0;
+  left: 0;
+  position: absolute;
+  top: 0px;
+  margin: 0; }
 
 .topic_num {
   font-size: 14px;
