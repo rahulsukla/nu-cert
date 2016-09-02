@@ -118,8 +118,10 @@ a {
 .button-clear img {
   max-width: 1.2em; }
 
-.congratulations-card img {
-  max-width: 100%; }
+.congratulations-card {
+  margin: 0 10px; }
+  .congratulations-card img {
+    max-width: 100%; }
 
 /* ProximaNovaSoft */
 @font-face {
